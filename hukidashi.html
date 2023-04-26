@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+      .hukidashi {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #f10;
+        padding: 0 30px;
+      }
+
+      .label{
+        background: white;
+        color: red;
+        display: flex;
+        justify-content: center;
+      }
+
+      .triangle-wrap{
+        color: white;
+        display: flex;
+        height: 15px;
+        justify-content: center;
+        position: relative;
+        top: -1px;
+        width: 100%;
+      }
+
+      .triangle{
+        display: flex;
+        height:15px;
+        justify-content: center;
+        overflow: hidden;
+        position:absolute;
+        width: 100%;
+      }
+
+      .triangle::after{
+        background: #fff;
+        border: 1px solid #f10;
+        content:"";
+        display: flex;
+        height:15px;
+        justify-content: center;
+        margin-top: -1px;
+        position:relative;
+        top: -50%;
+        transform: rotate(45deg);
+        width:15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="hukidashi">
+      <span class="label">
+        吹き出し
+      </span>
+    </div>
+    <div class="triangle-wrap">
+      <div class="triangle" />
+    </div>
+  </body>
+</html>
+
+
+
+
